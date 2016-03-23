@@ -15,11 +15,10 @@ public class UsuarioDAO {
 
 	public Usuario verificarDatos(Usuario usuario) throws Exception {
 		Usuario us = null;
-
 		try {
 			session = HibernateUtil.getSessionFactory().openSession();
-			String hql = "FROM Usuario WHERE nombre = '" + usuario.getUsername()
-					+ "' and clave = '" + usuario.getPassword() + "'";
+			String hql = "FROM Usuario WHERE username = '" + usuario.getUsername()
+					+ "' and password = '" + usuario.getPassword() + "'";
 			Query query = session.createQuery(hql);
 
 			if (!query.list().isEmpty()) {

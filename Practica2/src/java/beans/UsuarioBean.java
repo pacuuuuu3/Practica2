@@ -31,9 +31,9 @@ public class UsuarioBean {
 		try {
 			// Enviando la encriptacion
 			//String encript = DigestUtils.md5Hex(this.usuario.getNombre());
-			String encript = DigestUtils.sha1Hex(this.usuario.getPassword());
-			this.usuario.setPassword(encript);
-
+			//String encript = DigestUtils.sha1Hex(this.usuario.getPassword());
+			//this.usuario.setPassword(encript);
+                        
 			us = usuDAO.verificarDatos(this.usuario);
 			if (us != null) {
 
