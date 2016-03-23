@@ -1,8 +1,9 @@
-Instrucciones de instalación:
+B1;3409;0cInstrucciones de instalación:
 -Crear una base de datos e inicializarla con el script sesion.sql
 -Realizar la conexión con la base de datos en NetBeans bajo la pestaña "Services" -> "Databases" -> "New Connection"
 (Asegurarse de utilizar el driver de PostgreSQL y de crear la conexión bajo el schema public)
 -Debe editar el archivo hibernate.cfg.xml para que la configuración sea la misma que en su computadora (cambiar contraseña y conexión a la base)
+-Evidentemente, para iniciar sesión, es necesario meter a la base de datos un usuario con el nombre y contraseña deseados
 
 
 Suposiciones acerca del modelo de datos:
